@@ -1,0 +1,16 @@
+/* pages/leaveMessage/leaveMessage.wxss */
+.textinput {
+  width: 90vw;
+  height: 40vh;
+  margin-left: 40rpx;
+  background: rgb(250, 249, 250);
+  
+}
+
+.commitButton {
+  margin-top: 80rpx;
+  background: red;
+  width: 200rpx;
+  color: white;
+  font-size: 14px;
+}

@@ -1,0 +1,58 @@
+<!--pages/own/own.wxml-->
+
+<view class='page'>
+  <view class='header'>
+      <image class='headerImage' src="{{user.image?user.image:'../../images/imageheader.png'}}"></image>
+      <text class='name'>xlk</text>
+  </view>
+
+  <view class='cell' bindtap='contribute'>
+    <view class='content'>
+      <image class='image' src="{{'../../images/edit.png'}}"></image>
+      <text class='title'>投稿</text>
+    </view>
+    <image class='rightImage' src="{{'../../images/youjiantou.png'}}"></image>
+  </view>
+  <view class='line'></view>
+
+  <view class='cell' bindtap='goToLikeList'>
+    <view class='content'>
+      <image class='image' src="{{'../../images/like.png'}}"></image>
+      <text class='title'>我喜欢</text>
+    </view>
+    <image class='rightImage' src="{{'../../images/youjiantou.png'}}"></image>
+  </view>
+  <view class='line'></view>
+
+
+  <view class='cell' bindtap='leaveMessage'>
+    <view class='content'>
+      <image class='image' src="{{'../../images/liuyan.png'}}"></image>
+      <text class='title'>榜单留言</text>
+    </view>
+    <image class='rightImage' src="{{'../../images/youjiantou.png'}}"></image>
+  </view>
+  <view class='line'></view>
+  
+
+  <view class='cell' bindtap='contactUs'>
+    <view class='content'>
+      <image class='image' src="{{'../../images/contact.png'}}"></image>
+      <text class='title'>联系我们</text>
+    </view>
+    <image class='rightImage' src="{{'../../images/youjiantou.png'}}"></image>
+  </view>
+  <view class='line'></view>
+
+  <view class='cell' bindtap='auditContent' hidden='{{isAdmin}}'>
+    <view class='content'>
+      <image class='image' src="{{'../../images/audit.png'}}"></image>
+      <text class='title'>审查</text>
+    </view>
+    <image class='rightImage' src="{{'../../images/youjiantou.png'}}"></image>
+  </view>
+  <!-- <view class='line'></view> -->
+
+</view>
+
+

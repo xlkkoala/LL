@@ -1,0 +1,40 @@
+/* pages/contribute/contribute.wxss */
+
+.back {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Wawati SC';
+}
+
+.title {
+  margin: 20rpx;
+  height: 80rpx;
+  width: 95vw;
+  background: rgb(250, 249, 252);
+  border-radius: 5rpx;
+}
+
+.desc {
+  margin: 20rpx;
+  margin-top: 0rpx;
+  height: 80rpx;
+  width: 95vw;
+  background: rgb(250, 249, 252);
+  border-radius: 5rpx;
+}
+
+.content {
+  margin: 20rpx;
+  height: 60vh;
+  width: 95vw;
+  background: rgb(250, 249, 252);
+  border-radius: 5rpx;
+}
+.commitButton {
+  margin-top: 40rpx;
+  background: red;
+  width: 200rpx;
+  color: white;
+  font-size: 14px;
+}

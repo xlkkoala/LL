@@ -1,0 +1,8 @@
+<!--pages/contact/contact.wxml-->
+
+<view class='back'>
+  <view class='contact'>
+    <image class='image' src="{{'../../images/email.png'}}"></image>
+    <text class='text'>邮箱:xxx_koala@163.com</text>
+  </view>
+</view>

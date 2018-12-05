@@ -1,0 +1,7 @@
+<!--pages/contribute/contribute.wxml-->
+<view class='back'>
+  <input class='title' placeholder='标题' placeholder-style="font-family: 'Wawati SC';" maxlength='11' bindinput='getTitle'></input>
+  <input class='desc' placeholder='描述' placeholder-style="font-family: 'Wawati SC';" maxlength='30' bindinput='getDesc'></input>
+  <textarea class='content' placeholder='内容' bindinput='getContent'></textarea>
+  <button class='commitButton' bindtap='commit'>提交</button>
+</view>

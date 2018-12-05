@@ -1,0 +1,36 @@
+/* pages/contact/contact.wxss */
+
+.back {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Wawati SC';
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  height: 100rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  background: rgb(251, 250, 252);
+  border-radius: 5rpx;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 32rpx;
+  margin-left: 10rpx;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  margin-left: 10rpx;
+  font-size: 12px;
+}

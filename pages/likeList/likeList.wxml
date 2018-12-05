@@ -1,0 +1,15 @@
+<!--pages/likeList/likeList.wxml-->
+<view class='back'>
+  <scroll-view class='scroll'>
+    <block wx:for="{{dataArray}}">
+      <view class='contentView' data-obj='{{item}}' bindtap='enterContent'>
+        <image class='imageHeader'  src= "{{item.image?item.image :'../../images/imageheader.png'}}"></image>
+        <view class='message'>
+          <text class='title'>{{item.title}}</text>
+          <text class='desc'>{{item.descr}}</text>
+        </view>
+        
+      </view>
+    </block>
+  </scroll-view>
+</view>

@@ -1,0 +1,30 @@
+<!--index.wxml-->
+  <view class='contrainer'>
+    <scroll-view class='scrollview' scroll-y='true'>
+      <view wx:for="{{dataArray}}">
+        <view class='content' data-obj='{{item}}' bindtap='enterContent' >
+          <image class='imageHeader'  src= "{{item.image?item.image :'../../images/imageheader.png'}}"></image>
+          <view class='column'>
+            <text class='name'>{{item.nickname}}</text>
+            <text class='title'> {{item.title}}</text>
+            <text class='desc'> {{item.descr}}</text>
+            <text class='creattime'>{{item.creattime}}</text>
+          </view>
+        </view>
+        
+      </view>
+      <view class="loading" hidden="{{!searchLoading}}">正在载入更多...</view>
+      <view class="loading complete" hidden="{{!searchLoadingComplete}}">已加载全部</view>
+    </scroll-view>
+    
+  </view>
+  
+  
+  <view hidden="{{isShow}}">
+   <dialog id='dialog' hidden='{{isShow}}' title='登录提示' content='小程序需要您的授权才能提供更好的服务哦' confirmText='知道了' bind:confirmEvent='confirmEvent' bind:bindGetUserInfo='bindGetUserInfo'>     </dialog>
+  </view>
+
+<!-- </view> -->
+
+
+

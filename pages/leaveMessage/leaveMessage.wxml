@@ -1,0 +1,6 @@
+<!--pages/leaveMessage/leaveMessage.wxml-->
+
+<view class='container'>
+  <textarea class='textinput' placeholder='请输入想要提交的榜单留言内容，当您进入排行榜时（看个人作品的点赞数哦～）将自动显示'  placeholder-style='font-size:14px ' maxlength='-1' bindinput='currentmessage'></textarea>
+  <button class='commitButton' bindtap='commit'>提交</button>
+</view>

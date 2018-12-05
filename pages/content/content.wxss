@@ -1,0 +1,71 @@
+/* pages/content/content.wxss */
+
+.contrainer {
+  /* background-image: url('https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2708382855,195321356&fm=26&gp=0.jpg'); */
+  margin: 10rpx;
+  width: 98vw;
+  height: 98vh;
+  border-radius: 20rpx;
+  background-color: rgb(240, 250, 252);
+  font-family: 'Wawati SC';
+}
+
+.row {
+  display: inline;
+}
+
+.name {
+  font-size: 14px;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.header {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20rpx;
+}
+
+.desc {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10rpx;
+  color: rgb(146, 145, 146);
+}
+.content {
+  text-align: center;
+  font-size: 14px;
+  margin:40rpx;
+  word-break: keep-all;
+  word-wrap: break-word;
+  color: rgb(238, 71, 29);
+
+}
+
+.clickrow {
+  display: inline;
+}
+
+/* .focus {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 20rpx;
+  margin-left: 80vw;
+} */
+
+.like {
+  width: 60rpx;
+  height: 60rpx;
+  margin-top: 20rpx;
+  margin-left: 80vw;
+  text-align: right;
+}

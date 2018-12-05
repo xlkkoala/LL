@@ -1,0 +1,78 @@
+/* pages/own/own.wxss */
+.page {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(245, 244, 245);
+  font-family: 'Wawati SC';
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0rpx;
+  margin-bottom: 20rpx;
+  width: 100vw;
+  height: 30vh;
+  /* background: rgb(247, 221, 235); */
+   background-image: url('http://img4.imgtn.bdimg.com/it/u=2698534552,1705587334&fm=26&gp=0.jpg');
+   background-size: cover;
+}
+
+.headerImage {
+  background: rebeccapurple;
+  width: 20vw;
+  height: 20vw;
+  margin-top: 50rpx;
+  margin-left: 40vw;
+  border-radius: 50%;
+}
+
+.name {
+  width: 100vw;
+  height: auto;
+  margin-top: 30rpx;
+  text-align: center;
+  font-size: 16px;
+}
+
+.cell {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 120rpx;
+  background: white;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+  /* background: rgb(154, 194, 102); */
+}
+
+.title {
+  margin-left: 20rpx;
+  text-align: left;
+  font-size: 14px;
+}
+
+.rightImage {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+.line {
+  width: 90vw;
+  height: 0.3rpx;
+  /* background:black; */
+  margin-left: 10vw;
+}

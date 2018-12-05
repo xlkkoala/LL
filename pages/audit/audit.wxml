@@ -1,0 +1,16 @@
+<!--pages/audit/audit.wxml-->
+<view class='back'>
+  <view wx:for="{{dataArray}}">
+    <view class='cell'>
+      <text class='title'> {{item.title}}</text>
+      <text class='descr'> {{item.descr}}</text>
+      <text class='content'>{{item.content}}</text>
+      <view class='buttonLayout'>
+        <button class='refuse' data-id='{{item.id}}' data-index='{{index}}' bindtap='refuse'>refuse</button>
+        <button class='pass' data-id='{{item.id}}' data-index='{{index}}' bindtap='pass'>pass</button>
+      </view>
+      <view class='line'></view>
+    </view>
+  </view>
+</view>
+

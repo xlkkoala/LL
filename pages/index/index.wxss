@@ -1,0 +1,106 @@
+/**index.wxss**/
+
+.contrainer{
+  /* display: inherit; */
+  width: 100vw;
+  height: auto;
+  /* background-image: url('https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2708382855,195321356&fm=26&gp=0.jpg'); */
+  font-family: 'Wawati SC';
+}
+
+.scrollview {
+  margin-bottom: 0rpx;
+  
+  /* background-color: rebeccapurple; */
+}
+
+.content{
+  display: flex;
+  /* background-color: rgb(125, 191, 211); */
+}
+
+.imageHeader{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  margin-top: 10rpx;
+  margin-right: 20rpx;
+  width: 80vw;
+  background-color: rgb(247, 234, 240);
+  border-radius: 10rpx;
+  /* background-image: url('https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2708382855,195321356&fm=26&gp=0.jpg'); */
+}
+
+.name{
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  font-size: 12px;
+  color: rgb(6, 21, 85);
+}
+
+.title{
+  margin-top: 40rpx;
+  width: 79vw;
+  /* text-align: center; */
+  margin-left: 20rpx;
+  /* margin-bottom: 160rpx; */
+  font-size: 16px;
+  
+  color: rgb(59, 52, 66);
+}
+
+.desc{
+  margin-top: 20rpx;
+  width: 79vw;
+  /* text-align: center; */
+  
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 13px;
+  color: rgb(94, 92, 97);
+}
+
+.creattime {
+  margin-top: 20rpx;
+  width: 77vw;
+  text-align: right;
+  
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 12px;
+  color: rgb(174, 207, 250);
+}
+
+.loading{
+  padding: 10rpx;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(140, 138, 143);
+}
+
+.loading:before{
+  display: inline-block;
+  margin-right: 5rpx;
+  vertical-align: middle;
+  content: '';
+  width: 40rpx;
+  height: 40rpx; 
+  image-rendering: url("../../images/icon-loading.png") no-repeat;
+  /* background-image: url("../../images/icon-loading.png") no-repeat; */
+  background-size: contain;
+  animation: rotate 1s linear infinite;
+  
+}
+.loading.complete:before{
+  display: none;
+}

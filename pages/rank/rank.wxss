@@ -1,0 +1,56 @@
+/* pages/rank/rank.wxss */
+
+.contrainer {
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx;
+  width: 96vw;
+  height: auto;
+  border-radius: 20rpx;
+  background-color: rgb(240, 250, 252);
+  font-family: 'Wawati SC';
+}
+
+.messagecell {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  width: 91vw;
+  height: 8vh;
+  /* background-color: rgb(238, 245, 199); */
+  border-radius: 10rpx;
+}
+
+.imageHeader{
+  margin-top: 10rpx;
+  margin-left: 0rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.name {
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  font-size: 14px;
+}
+
+.contentcell {
+  margin: 20rpx;
+  margin-top: 20rpx;
+  width: 91vw;
+  height: auto;
+  /* background-color: rgb(248, 213, 231); */
+  border-radius: 10rpx;
+}
+.content {
+  /* margin: 20rpx; */
+  width: auto;
+  height: auto;
+  font-size: 12px;
+  word-break: keep-all;
+  word-wrap: break-word;
+  /* overflow-y: auto; */
+}

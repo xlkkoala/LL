@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/content/content",
+    "pages/rank/rank",
+    "pages/own/own",
+    "pages/likeList/likeList",
+    "pages/leaveMessage/leaveMessage",
+    "pages/contact/contact",
+    "pages/contribute/contribute",
+    "pages/audit/audit"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f9f9f9"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#f6b4d3",
+    "borderStyle": "black",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-actived.png"
+      },
+      {
+        "text": "榜单",
+        "pagePath": "pages/rank/rank",
+        "iconPath": "images/paihang.png",
+        "selectedIconPath": "images/paihang-actived.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/own/own",
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/wode-actived.png"
+      }
+    ]
+  }
+}

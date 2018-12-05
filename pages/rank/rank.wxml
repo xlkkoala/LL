@@ -1,0 +1,10 @@
+<!--pages/rank/rank.wxml-->
+<view class='contrainer'>
+  <view class='messagecell'>
+    <image class='imageHeader'  src= "{{obj.image?obj.image :'../../images/imageheader.png'}}"></image>
+    <text class='name'>{{obj.nickname}}</text>
+  </view>
+  <view class='contentcell' >
+      <text class='content' >{{obj.rankmsg}}</text>
+  </view>
+</view>
