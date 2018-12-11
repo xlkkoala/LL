@@ -11,7 +11,8 @@ App({
   },
   globalData: {
 
-    HOST: 'http://localhost:8082',
+    // HOST: 'http://localhost:8082',
+    HOST: 'http://www.xlk.ink:8082/liliu',
 
     userInfo: null,
     appid:'wx2b529ddcbdeb8224',

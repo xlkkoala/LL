@@ -19,7 +19,7 @@
 }
 
 .headerImage {
-  background: rebeccapurple;
+  /* background: rgb(242, 248, 205); */
   width: 20vw;
   height: 20vw;
   margin-top: 50rpx;

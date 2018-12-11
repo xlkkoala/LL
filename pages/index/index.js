@@ -28,6 +28,9 @@ Page({
     var that = this;
     var userInfo = wx.getStorageSync('userInfo');
     if (!userInfo) {
+      wx.hideTabBar({
+        
+      })
       that.setData({
         isShow: false
       })
@@ -111,14 +114,21 @@ Page({
     this.dialog.showDialog();
   },
   confirmEvent: function () {
-    this.dialog.hideDialog();
+    // this.dialog.hideDialog();
   },
 
 //调用login 方法后获取openid 然后从服务器获取用户数据
   bindGetUserInfo: function (e) {
+    var that = this;
     // 用户点击授权后，这里可以做一些登陆操作
     console.log(e);
     var obj = app.globalData.userInfo;
+    if (obj == null) {
+      that.setData({
+        isShow: false
+      })
+      return;
+    }
     // this.login();
     wx.login({
         success: function (res) {
@@ -151,28 +161,67 @@ Page({
                     header: { "Content-Type": "application/x-www-form-urlencoded"},
                     success:function (result) {
                       if (result.data.response.user != null){
+                        wx.showTabBar({
+                          
+                        });
+                        that.setData({
+                          isShow: true
+                        })
                         console.log('login success');
                         obj = result.data.response.user;
                         wx.setStorageSync('userInfo', obj)
                       }else {
+                        that.setData({
+                          isShow: false
+                        })
                         wx.showToast({
                           title: '获取信息失败',
                           duration:2000
                         })
                       }
+                    },
+                    fail : function (e) {
+                      that.setData({
+                        isShow: false
+                      })
+                      wx.showToast({
+                        title: '获取信息失败,请重试',
+                        icon: null,
+                        duration: 2000
+                      })
                     }
                   })
                 } else {
+                  that.setData({
+                    isShow: false
+                  })
                   console.info("获取用户openId失败");
                 }
               },
+              
               fail: function (error) {
+                that.setData({
+                  isShow: false
+                })
                 console.info("获取用户openId失败");
                 console.info(error);
               }
             })
+          }else {
+            that.setData({
+              isShow: false
+            })
           }
+        },
+        fail: function (error) {
+          that.setData({
+            isShow: false
+          })
+          console.info("获取用户openId失败");
+          console.info(error);
         }
+      
+
       });
   },
 })

@@ -1,4 +1,5 @@
 /**index.wxss**/
+/* @import "../../lib/style/font.wxss"; */
 
 .contrainer{
   /* display: inherit; */

@@ -18,6 +18,7 @@ Page({
     var obj = wx.getStorageSync("userInfo");
     if(obj.uid == 1) {
         that.setData({
+          user: obj,
           isAdmin:false,
         });
     }

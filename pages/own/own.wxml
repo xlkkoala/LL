@@ -2,7 +2,7 @@
 
 <view class='page'>
   <view class='header'>
-      <image class='headerImage' src="{{user.image?user.image:'../../images/imageheader.png'}}"></image>
+      <image class='headerImage' src="{{user.image?user.image:'../../images/morentouxiang.png'}}"></image>
       <text class='name'>xlk</text>
   </view>
 
