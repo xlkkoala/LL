@@ -133,26 +133,23 @@ Page({
     wx.login({
         success: function (res) {
           if (res.code) {
+            console.log('code======',res.code);
             //获取openId
             wx.request({
-              url: app.globalData.USER_OPENID,
+              url: app.globalData.HOST + app.globalData.USER_OPENID,
               data: {
-                //小程序唯一标识
-                appid: app.globalData.appid,
-                //小程序的 app secret
-                secret: app.globalData.appsecret,
-                grant_type: 'authorization_code',
-                js_code: res.code
+            
+                code: res.code
               },
               method: 'GET',
               header: { 'content-type': 'application/json' },
               success: function (openIdRes) {
                 
                 // 判断openId是否获取成功
-                if (openIdRes.data.openid != null & openIdRes.data.openid != undefined) {
+                if (openIdRes.data != null & openIdRes.data != undefined) {
                   // 将用户信息传到服务器中
-                  console.log('根据openID' + openIdRes.data.openid +'从服务器中获取用户信息')
-                  obj.openid = openIdRes.data.openid;
+                  console.log('根据openID' + openIdRes.data +'从服务器中获取用户信息')
+                  obj.openid = openIdRes.data;
                   console.log('obj ====== '+ obj.nickName + obj.openid)
                   wx.request({
                     url: app.globalData.HOST + app.globalData.USER_LOGIN,
@@ -185,7 +182,7 @@ Page({
                         isShow: false
                       })
                       wx.showToast({
-                        title: '获取信息失败,请重试',
+                        title: '获取信息失败',
                         icon: null,
                         duration: 2000
                       })
@@ -195,7 +192,12 @@ Page({
                   that.setData({
                     isShow: false
                   })
-                  console.info("获取用户openId失败");
+                  
+                  wx.showToast({
+                    title: '获取openId失败',
+                    icon: null,
+                    duration: 2000
+                  })
                 }
               },
               
@@ -203,13 +205,22 @@ Page({
                 that.setData({
                   isShow: false
                 })
-                console.info("获取用户openId失败");
-                console.info(error);
+                
+                wx.showToast({
+                  title: '获取openId失败',
+                  icon: null,
+                  duration: 2000
+                })
               }
             })
           }else {
             that.setData({
               isShow: false
+            })
+            wx.showToast({
+              title: '获取openId失败',
+              icon: null,
+              duration: 2000
             })
           }
         },
@@ -217,8 +228,11 @@ Page({
           that.setData({
             isShow: false
           })
-          console.info("获取用户openId失败");
-          console.info(error);
+          wx.showToast({
+            title: '获取openId失败',
+            icon: null,
+            duration: 2000
+          })
         }
       
 

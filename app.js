@@ -11,14 +11,14 @@ App({
   },
   globalData: {
 
-    // HOST: 'http://localhost:8082',
-    HOST: 'http://www.xlk.ink:8082/liliu',
+    HOST: 'http://localhost:8082',
+    // HOST: 'http://www.xlk.ink:8082/liliu',
 
     userInfo: null,
     appid:'wx2b529ddcbdeb8224',
     appsecret:'35094b87eb2cdcc65d8846be48936e43',
     //url
-    USER_OPENID:  'https://api.weixin.qq.com/sns/jscode2session',
+    USER_OPENID:  '/Application/getOpenid',
     USER_LOGIN: '/Application/login',
     GET_LLLIST: '/Application/queryListByPage',
     IS_LIKE: '/Application/isLike',
